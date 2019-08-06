@@ -2,10 +2,14 @@
 Utilities JavaScript ES+ Class with functions to aid development
 
 ## Import or require.
+```
 import Utilities from 'Utilities';
+```
 
 ## Instantiate the class like this:
+```
 const utils = new Utilities() // true to mask or empty to unmask
+```
 
 ## Sort an Array of Objects like this:
 ```
