@@ -1,5 +1,5 @@
 # utilities
-Utilities JavaScript ES+ Class with functions to aid development
+Utilities JavaScript ES+ Class with functions to aid development. New utilities would lie in here.
 
 ## Import or require.
 ```
