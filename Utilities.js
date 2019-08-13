@@ -26,6 +26,21 @@ class Utilities {
       return 0;
     });
   }
+  shuffleItems(array) {
+    const shuffled = array;
+    let currentIndex = shuffled.length;
+    let temporaryValue;
+    let randomIndex;
+    while (currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = shuffled[currentIndex];
+      shuffled[currentIndex] = shuffled[randomIndex];
+      shuffled[randomIndex] = temporaryValue;
+    }
+    return shuffled;
+  }
 }
 
 export default Utilities;
