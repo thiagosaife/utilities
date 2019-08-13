@@ -1,5 +1,5 @@
 class Utilities {
-  sortArray(array, field) {
+  sortArray(array, fields) {
     if (Array.isArray(fields)) {
       array.sort((a, b) => {
         let i = 0;
