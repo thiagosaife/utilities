@@ -55,4 +55,10 @@ const fruits = ['orange', 'apple', 'lemon', 'pinneapple'];
 const sortedArray = utils.sortArray(fruits);
 ```
 
+## Shuffle the array items
+```
+const fruits = ['orange', 'apple', 'lemon', 'pinneapple'];
+const shuffled = utils.shuffleItems(fruits);
+```
+
 Enjoy!!!
