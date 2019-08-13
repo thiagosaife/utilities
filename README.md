@@ -26,7 +26,7 @@ const animals = [
 const sortedArray = utils.sortArray(animals, 'name');
 ```
 
-## Now you can sort an array of objects by their nested properties, like this:
+## You can now sort an array of objects by their nested properties, like this:
 ```
 const animals = [
  {
