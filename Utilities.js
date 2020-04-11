@@ -31,6 +31,14 @@ class Utilities {
     }
     return shuffled;
   }
+  reduceArrayKeys(originalArray, keysToKeep) {
+    // keysToKeep: Array with keys to keep in original array
+    return originalArray.map((item) => keysToKeep
+      .reduce((acc, card) => {
+        acc[card] = item[card];
+        return acc;
+      }, {}));
+  }
 }
 
 export default Utilities;
