@@ -34,8 +34,8 @@ class Utilities {
   reduceArrayKeys(originalArray, keysToKeep) {
     // keysToKeep: Array with keys to keep in original array
     return originalArray.map((item) => keysToKeep
-      .reduce((acc, card) => {
-        acc[card] = item[card];
+      .reduce((acc, key) => {
+        acc[key] = item[key];
         return acc;
       }, {}));
   }
