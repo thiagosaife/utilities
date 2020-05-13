@@ -40,7 +40,7 @@ class Utilities {
       }, {}));
   }
   insertionSort(array){
-    for (let j = 1; j < array.length; j++) {
+    for (let j = 2; j < array.length; j++) {
       let i = j - 1;
       let key = array[j];
       while (i >= 0 && array[i] > key) {
