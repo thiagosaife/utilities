@@ -31,6 +31,18 @@ class Utilities {
     }
     return shuffled;
   }
+  insertionSort(array) {
+    for (let j = 1; j < array.length; j++) {
+      let i = j - 1;
+      let key = array[j];
+      while (i >= 0 && array[i] > key) {
+        array[i + 1] = array[i];
+        i--;
+      }
+      array[i + 1] = key;
+    }
+    return array;
+  }
 }
 
 export default Utilities;
