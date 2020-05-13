@@ -61,4 +61,53 @@ const fruits = ['orange', 'apple', 'lemon', 'pinneapple'];
 const shuffled = utils.shuffleItems(fruits);
 ```
 
+## Reduce an array of object to the desired key
+This function reduces an array of objects, keeping just the keys specified as an a array, in the keysToKeep parameter.
+```
+const keysToKeep = ['doors', 'tires', 'engine'];
+const cars = [
+  {
+    model: 'Golf',
+    tires: 'Continental',
+    engine: 'VW model',
+    doors: 5,
+    gearBox: 'auto',
+  },
+  {
+    model: 'Argo',
+    tires: 'Goodyear',
+    engine: 'Fiat',
+    doors: 5,
+    gearBox: 'auto',
+  },
+  {
+    model: 'Fusca',
+    tires: 'Pirelli',
+    engine: 'VW',
+    doors: 3,
+    gearBox: 'manual',
+  },
+];
+const reduced = utils.reduceArrayKeys(fruits);
+// => [
+  {
+    {
+    tires: 'Continental',
+    engine: 'VW model',
+    doors: 5,
+  },
+  {
+    tires: 'Goodyear',
+    engine: 'Fiat',
+    doors: 5,
+  },
+  {
+    tires: 'Pirelli',
+    engine: 'VW',
+    doors: 3,
+  },
+  }
+]
+```
+
 Enjoy!!!
