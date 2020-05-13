@@ -61,7 +61,7 @@ const fruits = ['orange', 'apple', 'lemon', 'pinneapple'];
 const shuffled = utils.shuffleItems(fruits);
 ```
 
-## Reduce an array of objects to one containing just the object's desired keys
+## Reduce an array of objects to one containing objects with the desired keys
 This function reduces an array of objects, keeping just the keys specified as an a array, in the keysToKeep parameter.
 ```
 const keysToKeep = ['doors', 'tires', 'engine'];
